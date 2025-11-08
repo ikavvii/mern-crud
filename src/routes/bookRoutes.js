@@ -20,4 +20,6 @@ router.post("/edit/:id", bookController.updateBook);
 // Delete book
 router.post("/delete/:id", bookController.deleteBook);
 
+router.get("/next", bookController.getNextBook);
+
 module.exports = router;

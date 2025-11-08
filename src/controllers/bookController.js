@@ -34,3 +34,7 @@ exports.deleteBook = async (req, res) => {
   await Book.findByIdAndDelete(req.params.id);
   res.redirect("/books");
 };
+
+exports.getNextBook = (req, res) => {
+    res.render("welcome");
+}

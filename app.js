@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, "src", "public"))); // Serve static 
 
 // Basic Route
 app.get("/", (req, res) => {
-  res.redirect("/books");
+  res.render("welcome");
 });
 
 // Routes (will be added later)
